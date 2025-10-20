@@ -51,13 +51,6 @@ class OfficeSpaceForm
                     ->prefix('Days')
                     ->numeric(),
 
-                Select::make('is_popular')
-                    ->label('Popular Status')
-                    ->options([
-                        true => 'Popular',
-                        false => 'Not Popular',
-                    ]),
-
                 Repeater::make('photos')
                     ->relationship('photos')
                     ->schema([
